@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingdom Animalia - Interactive Experience</title>
+    <title>Kingdom Animalea</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -11,7 +11,7 @@
 </head>
 <body class="bg-[#020603] text-white antialiased overflow-x-hidden">
 
-    <section class="w-full h-screen flex flex-col justify-end items-center text-center relative overflow-hidden pb-32 px-4">
+    <section class="w-full min-h-screen flex flex-col justify-end items-center text-center relative overflow-hidden pb-16 md:pb-32 px-4 py-20">
         <video autoplay loop muted playsinline 
                class="absolute inset-0 w-full h-full object-cover z-0 opacity-45 filter brightness-90 contrast-110">
             <source src="img/Fondo  .mp4" type="video/mp4">
@@ -19,49 +19,49 @@
 
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-emerald-950/20 to-[#020b05] z-5"></div>
 
-        <div class="relative z-10 space-y-4 max-w-4xl animate-[fadeIn_1.5s_ease-out]">
-            <span class="text-emerald-400 font-mono text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+        <div class="relative z-10 space-y-4 max-w-4xl px-2">
+            <span class="text-[10px] md:text-xs text-emerald-400 font-mono tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 inline-block">
                 Biodiversidad e Innovación Biológica
             </span>
-            <h1 class="text-7xl md:text-9xl font-black tracking-tighter bg-gradient-to-b from-white via-neutral-200 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_10px_30px_rgba(16,185,129,0.3)]">
+            <h1 class="text-5xl sm:text-7xl md:text-9xl font-black tracking-tighter bg-gradient-to-b from-white via-neutral-200 to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_10px_30px_rgba(16,185,129,0.3)]">
                 ANIMALEA
             </h1>
-            <p class="text-neutral-300 text-sm md:text-lg font-light tracking-wide max-w-2xl mx-auto drop-shadow-md">
+            <p class="text-neutral-300 text-xs sm:text-sm md:text-lg font-light tracking-wide max-w-2xl mx-auto drop-shadow-md leading-relaxed">
                 Un análisis macroevolutivo e interactivo a través de la morfología, taxonomía filogenética y el equilibrio ecológico del reino animal.
             </p>
         </div>
 
-        <div class="absolute bottom-10 z-10 animate-bounce text-xs font-mono tracking-widest text-emerald-400/80 bg-emerald-950/40 backdrop-blur-md px-4 py-2 rounded-full border border-emerald-500/20">
+        <div class="absolute bottom-6 md:bottom-10 z-10 animate-bounce text-[10px] font-mono tracking-widest text-emerald-400/80 bg-emerald-950/40 backdrop-blur-md px-4 py-2 rounded-full border border-emerald-500/20">
             DESLIZA PARA INICIAR EXPLORACIÓN ↓
         </div>
     </section>
 
-    <div id="pin-section-1" class="w-full h-screen relative overflow-hidden bg-[#020b05] flex items-center">
-        <div class="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
+    <div id="pin-section-1" class="w-full min-h-screen relative overflow-hidden bg-[#020b05] flex items-center py-12 md:py-0">
+        <div class="absolute top-1/4 right-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-emerald-500/10 rounded-full blur-[100px] md:blur-[160px] pointer-events-none animate-pulse"></div>
 
-        <div class="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
-            <div id="text-box-1" class="w-full md:w-1/2 space-y-6 opacity-0 translate-y-12">
-                <span class="text-emerald-400 font-mono text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">01 / Pilares Morfológicos</span>
-                <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Sinapomorfías y<br><span class="text-emerald-400 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Fisiología Animal</span></h2>
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 relative z-10">
+            <div id="text-box-1" class="w-full md:w-1/2 space-y-4 md:space-y-6 md:opacity-0 md:translate-y-12">
+                <span class="text-emerald-400 font-mono text-[10px] md:text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20 inline-block">01 / Pilares Morfológicos</span>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight text-white leading-tight">Sinapomorfías y<br><span class="text-emerald-400 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Fisiología Animal</span></h2>
                 
-                <div class="glass-panel p-6 rounded-3xl space-y-4 text-sm text-neutral-300 shadow-2xl border-l-4 border-emerald-500 relative overflow-hidden group hover:border-emerald-400 transition-colors">
-                    <p><strong class="text-white font-semibold">Tisularidad y Eucariosis:</strong> Organismos pluricelulares con diferenciación celular avanzada en tejidos especializados (excepto Poríferos). Sus células carecen de pared celular rígida, lo que permite la plasticidad celular y estructural, soportada por una matriz extracelular rica en colágeno estructural único.</p>
-                    <p><strong class="text-white font-semibold">Heterotrofía por Ingestión:</strong> Metabolismo oxidativo basado en la asimilación interna de macromoléculas orgánicas. A diferencia de los hongos que absorben nutrientes externamente, los animales procesan los alimentos en cavidades digestivas internas (cámaras gástricas o tubos digestivos complejos) auxiliados por enzimas hidrolíticas específicas.</p>
-                    <p><strong class="text-white font-semibold">Estructura Motriz Bilateral:</strong> Presencia de tejidos contráctiles (muscular) y de conducción electroquímica (nervioso) únicos del reino. Esto genera polaridad funcional y permite respuestas motoras voluntarias inmediatas ante estímulos ambientales, coordinando la homeostasis interna activa.</p>
+                <div class="glass-panel p-5 md:p-6 rounded-2xl md:rounded-3xl space-y-3 md:space-y-4 text-xs md:text-sm text-neutral-300 shadow-2xl border-l-4 border-emerald-500 relative overflow-hidden group hover:border-emerald-400 transition-colors">
+                    <p><strong class="text-white font-semibold">Tisularidad y Eucariosis:</strong> Organismos pluricelulares con diferenciación celular avanzada en tejidos especializados. Sus células carecen de pared celular rígida, lo que permite la plasticidad celular y estructural.</p>
+                    <p><strong class="text-white font-semibold">Heterotrofía por Ingestión:</strong> Metabolismo oxidativo basado en la asimilación interna de macromoléculas orgánicas en cavidades digestivas internas auxiliados por enzimas hidrolíticas específicas.</p>
+                    <p><strong class="text-white font-semibold">Estructura Motriz Bilateral:</strong> Presencia de tejidos contráctiles (muscular) y de conducción nerviosa únicos del reino. Esto genera polaridad funcional y respuestas motoras inmediatas.</p>
                 </div>
 
-                <div id="examples-1" class="glass-panel p-5 rounded-2xl bg-emerald-950/10 border border-emerald-500/10 opacity-0 translate-y-6">
-                    <span class="text-xs font-mono text-emerald-400 block mb-2">// Registro Evolutivo Temprano:</span>
-                    <p class="text-xs text-neutral-400 leading-relaxed">
-                        Desde la simetría radial en <span class="text-emerald-300 italic">Cnidarios</span> (medusas) con redes nerviosas difusas no centralizadas y organización diblástica (dos capas germinales), hasta las transiciones críticas hacia la simetría bilateral que propiciaron la triploblastía (ectodermo, mesodermo y endodermo), dando origen a la cefalización estructural y centros de procesamiento ganglionar avanzados.
+                <div id="examples-1" class="glass-panel p-4 rounded-xl bg-emerald-950/10 border border-emerald-500/10 md:opacity-0 md:translate-y-6">
+                    <span class="text-[10px] md:text-xs font-mono text-emerald-400 block mb-1">// Registro Evolutivo Temprano:</span>
+                    <p class="text-[11px] md:text-xs text-neutral-400 leading-relaxed">
+                        Desde la simetría radial en <span class="text-emerald-300 italic">Cnidarios</span> con redes nerviosas difusas, hasta las transiciones críticas hacia la simetría bilateral que propiciaron la triploblastía y la cefalización avanzada.
                     </p>
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 flex items-center justify-center relative">
-                <div id="animal-1" class="w-[380px] h-[380px] opacity-0 scale-50 relative flex items-center justify-center">
-                    <div class="absolute w-72 h-72 rounded-full bg-emerald-500/20 blur-[60px]"></div>
-                    <svg class="w-full h-full text-emerald-400 drop-shadow-[0_0_35px_rgba(16,185,129,0.6)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
+            <div class="w-full md:w-1/2 flex items-center justify-center relative pt-6 md:pt-0">
+                <div id="animal-1" class="w-[260px] sm:w-[320px] md:w-[380px] h-[260px] sm:w-[320px] md:h-[380px] md:opacity-0 md:scale-50 relative flex items-center justify-center">
+                    <div class="absolute w-48 md:w-72 h-48 md:h-72 rounded-full bg-emerald-500/20 blur-[40px] md:blur-[60px]"></div>
+                    <svg class="w-full h-full text-emerald-400 drop-shadow-[0_0_25px_rgba(16,185,129,0.5)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
                         <path d="M20,50 C20,15 80,15 80,50 C80,56 20,56 20,50 Z" fill="rgba(16,185,129,0.15)"></path>
                         <path class="tentacle-1" d="M32,54 C28,68 38,78 32,95"></path>
                         <path class="tentacle-2" d="M44,56 C42,70 47,82 42,98"></path>
@@ -73,37 +73,37 @@
         </div>
     </div>
 
-    <div id="pin-section-2" class="w-full h-screen relative overflow-hidden bg-[#010703] flex items-center">
-        <div class="absolute bottom-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
+    <div id="pin-section-2" class="w-full min-h-screen relative overflow-hidden bg-[#010703] flex items-center py-12 md:py-0">
+        <div class="absolute bottom-1/4 left-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-cyan-500/10 rounded-full blur-[100px] md:blur-[160px] pointer-events-none animate-pulse"></div>
 
-        <div class="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-            <div id="text-box-2" class="w-full md:w-1/2 space-y-6 opacity-0 translate-y-12">
-                <span class="text-cyan-400 font-mono text-xs tracking-widest uppercase bg-cyan-500/10 px-3 py-1 rounded-md border border-cyan-500/20">02 / Divergencia Evolutiva</span>
-                <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Sistemática y<br><span class="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Árbol Filogenético</span></h2>
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-12 relative z-10">
+            <div id="text-box-2" class="w-full md:w-1/2 space-y-4 md:space-y-6 md:opacity-0 md:translate-y-12">
+                <span class="text-cyan-400 font-mono text-[10px] md:text-xs tracking-widest uppercase bg-cyan-500/10 px-3 py-1 rounded-md border border-cyan-500/20 inline-block">02 / Divergencia Evolutiva</span>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight text-white leading-tight">Sistemática y<br><span class="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Árbol Filogenético</span></h2>
                 
-                <div class="glass-panel p-6 rounded-3xl text-left text-neutral-300 shadow-2xl border-r-4 border-cyan-500 relative">
-                    <p class="mb-4 text-sm leading-relaxed">El clado <strong class="text-white">Animalia (Metazoa)</strong> diverge filogenéticamente dentro del dominio Eukarya a partir de ancestros coanoflagelados unicedulares. Su subdivisión moderna utiliza genómica comparativa, patrones embrionarios de segmentación (Protóstomos vs. Deuteróstomos) y la naturaleza arquitectónica de sus cavidades corporales celómicas:</p>
+                <div class="glass-panel p-5 md:p-6 rounded-2xl md:rounded-3xl text-left text-neutral-300 shadow-2xl border-r-4 border-cyan-500 relative">
+                    <p class="mb-4 text-xs md:text-sm leading-relaxed">El clado <strong class="text-white">Animalia (Metazoa)</strong> diverge filogenéticamente a partir de ancestros coanoflagelados. Su subdivisión moderna utiliza patrones embrionarios de segmentación y la estructura celómica:</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-neutral-800/60">
                         <div class="p-3 bg-cyan-950/20 rounded-xl border border-cyan-500/10 hover:border-cyan-500/30 transition-all">
-                            <span class="text-cyan-400 font-bold block text-sm mb-1">INVERTEBRADOS (95% del Reino)</span>
-                            <p class="text-xs text-neutral-400 mb-2">Grupo parafilético definido por la ausencia de columna vertebral ósea. Exhiben una diversidad morfológica masiva que incluye exoesqueletos de quitina calcificada, conchas de carbonato de calcio o sistemas hidrostáticos de soporte de presión interna.</p>
-                            <span class="text-[10px] text-neutral-500 block font-mono">// PHYLA CLAVE:</span>
-                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Arthropoda (insectos, crustáceos), Mollusca (cefalópodos, bivalvos), Annelida, Echinodermata.</p>
+                            <span class="text-cyan-400 font-bold block text-xs mb-1">INVERTEBRADOS (95%)</span>
+                            <p class="text-[11px] text-neutral-400 mb-2 leading-relaxed">Definidos por la ausencia de columna vertebral ósea. Exhiben exoesqueletos de quitina calcificada o sistemas hidrostáticos.</p>
+                            <span class="text-[9px] text-neutral-500 block font-mono">// PHYLA CLAVE:</span>
+                            <p class="text-[10px] text-cyan-200/90 italic font-medium">Arthropoda, Mollusca, Echinodermata.</p>
                         </div>
                         <div class="p-3 bg-cyan-950/20 rounded-xl border border-cyan-500/10 hover:border-cyan-500/30 transition-all">
-                            <span class="text-cyan-400 font-bold block text-sm mb-1">VERTEBRADOS (Subphylum Chordata)</span>
-                            <p class="text-xs text-neutral-400 mb-2">Clado monofilético caracterizado por la presencia de notocorda durante el desarrollo embrionario, un cordón nervioso dorsal hueco, hendiduras faríngeas y una cola post-anal, evolucionando hacia un endoesqueleto axial metamerizado y un cráneo protector de alta densidad.</p>
-                            <span class="text-[10px] text-neutral-500 block font-mono">// CLASES CLAVE:</span>
-                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Chondrichthyes (peces cartilaginosos), Amphibia, Reptilia, Aves, Mammalia.</p>
+                            <span class="text-cyan-400 font-bold block text-xs mb-1">VERTEBRADOS (Chordata)</span>
+                            <p class="text-[11px] text-neutral-400 mb-2 leading-relaxed">Caracterizados por la presencia de notocorda embrionaria, evolucionando hacia un endoesqueleto axial metamerizado.</p>
+                            <span class="text-[9px] text-neutral-500 block font-mono">// CLASES CLAVE:</span>
+                            <p class="text-[10px] text-cyan-200/90 italic font-medium">Chondrichthyes, Amphibia, Reptilia, Mammalia.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 flex items-center justify-center relative">
-                <div id="animal-2" class="w-[360px] h-[360px] opacity-0 scale-50 relative flex items-center justify-center">
-                    <div class="absolute w-72 h-72 rounded-full bg-cyan-500/20 blur-[60px]"></div>
-                    <svg class="w-full h-full text-cyan-400 drop-shadow-[0_0_35px_rgba(6,182,212,0.6)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
+            <div class="w-full md:w-1/2 flex items-center justify-center relative pt-6 md:pt-0">
+                <div id="animal-2" class="w-[240px] sm:w-[300px] md:w-[360px] h-[240px] sm:w-[300px] md:h-[360px] md:opacity-0 md:scale-50 relative flex items-center justify-center">
+                    <div class="absolute w-44 md:w-72 h-44 md:h-72 rounded-full bg-cyan-500/20 blur-[40px] md:blur-[60px]"></div>
+                    <svg class="w-full h-full text-cyan-400 drop-shadow-[0_0_25px_rgba(6,182,212,0.5)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
                         <circle cx="50" cy="45" r="22" fill="rgba(6,182,212,0.1)"></circle>
                         <circle class="chameleon-eye" cx="44" cy="40" r="3.5" fill="currentColor"></circle>
                         <path d="M66,45 C73,45 78,53 74,60 C70,66 62,60 63,54" stroke-dasharray="2,2"></path>
@@ -114,94 +114,92 @@
         </div>
     </div>
 
-    <div id="pin-section-3" class="w-full h-screen relative overflow-hidden bg-[#020b05] flex items-center">
-        <div class="absolute bottom-1/3 right-1/3 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
+    <div id="pin-section-3" class="w-full min-h-screen relative overflow-hidden bg-[#020b05] flex items-center py-16 md:py-0">
+        <div class="absolute bottom-1/3 right-1/3 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-amber-500/10 rounded-full blur-[100px] md:blur-[160px] pointer-events-none animate-pulse"></div>
 
-        <div class="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center items-center relative">
-            <span class="text-amber-400 font-mono text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20 mb-4">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col justify-center items-center relative z-10">
+            <span class="text-amber-400 font-mono text-[10px] md:text-xs tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20 mb-3 inline-block">
                 03 / Servicios Ecosistémicos
             </span>
-            <h2 id="title-3" class="text-4xl md:text-6xl font-black tracking-tight text-center mb-12 opacity-0 bg-gradient-to-r from-emerald-400 via-amber-300 to-amber-500 bg-clip-text text-transparent drop-shadow-md">
+            <h2 id="title-3" class="text-2xl sm:text-4xl md:text-6xl font-black tracking-tight text-center mb-8 md:mb-12 md:opacity-0 bg-gradient-to-r from-emerald-400 via-amber-300 to-amber-500 bg-clip-text text-transparent drop-shadow-md px-2 leading-tight">
                 Dinámicas e Impacto Ecológico Global
             </h2>
             
-            <div id="grid-3" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full opacity-0 translate-y-24 z-10">
-                <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
-                    <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
+            <div id="grid-3" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full md:opacity-0 md:translate-y-24">
+                <div class="glass-panel p-5 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 bg-neutral-900/10 group hover:scale-[1.02] md:hover:scale-105 transition-all duration-300">
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
                         <span class="text-amber-400 text-xs font-mono">01</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Cascadas Tróficas</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Cascadas Tróficas</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Ejercen un control regulador de tipo "top-down" (de arriba hacia abajo) en las redes alimentarias mediante la depredación activa. Al mitigar la presión herbívora desmedida, se preserva directamente la estructura forestal, la captura de carbono atmosférico, la estabilidad de los suelos y la prevención del estrés hídrico macroambiental.
+                        Ejercen un control regulador de tipo "top-down" mediante la depredación activa, mitigando la presión herbívora desmedida y preservando la captura de carbono atmosférico y la estabilidad macroambiental.
                     </p>
-                    <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Regulación macroambiental macroscópica.
+                    <p class="text-[10px] md:text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
+                        <strong>Bio-Impacto:</strong> Regulación macroambiental.
                     </p>
                 </div>
 
-                <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
-                    <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
+                <div class="glass-panel p-5 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 bg-neutral-900/10 group hover:scale-[1.02] md:hover:scale-105 transition-all duration-300">
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
                         <span class="text-amber-400 text-xs font-mono">02</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Polinización Zoofílica</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Polinización Zoofílica</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Facilitan el flujo genético geográfico y la recombinación meiótica cruzada de las angiospermas (plantas con flores) mediante vectores animales móviles. Este proceso interactivo mantiene la resiliencia evolutiva de la flora y sostiene más del 75% de la producción global de cultivos agrícolas críticos para la humanidad.
+                        Facilitan el flujo genético de las angiospermas mediante vectores móviles. Este proceso mantiene la resiliencia evolutiva de la flora y sostiene más del 75% de la producción de cultivos globales.
                     </p>
-                    <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Coevolución simbiótica Planta-Animal.
+                    <p class="text-[10px] md:text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
+                        <strong>Bio-Impacto:</strong> Coevolución simbiótica.
                     </p>
                 </div>
 
-                <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
-                    <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
+                <div class="glass-panel p-5 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 bg-neutral-900/10 group hover:scale-[1.02] md:hover:scale-105 transition-all duration-300 sm:col-span-2 md:col-span-1">
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
                         <span class="text-amber-400 text-xs font-mono">03</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Bioturbación de Suelos</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Bioturbación de Suelos</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Provocan la alteración mecánica, mezcla y oxigenación de sedimentos terrestres y marinos mediante organismos fosoriales y descomponedores. Esto acelera sustancialmente la meteorización mineral de macronutrientes esenciales, permitiendo el reciclaje y fijación eficiente de ciclos biogeoquímicos como el nitrógeno y el fósforo.
+                        Provocan la alteración mecánica y oxigenación de sedimentos mediante organismos fosoriales. Esto acelera sustancialmente el reciclaje y fijación eficiente de ciclos biogeoquímicos como el nitrógeno.
                     </p>
-                    <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Dinámica de Ciclos Biogeoquímicos globales.
+                    <p class="text-[10px] md:text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
+                        <strong>Bio-Impacto:</strong> Dinámica de Ciclos Globales.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="w-full min-h-[60vh] bg-[#010603] relative py-20 px-6 flex flex-col items-center justify-center border-t border-neutral-900">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <section class="w-full min-h-[60vh] bg-[#010603] relative py-16 md:py-20 px-4 sm:px-6 flex flex-col items-center justify-center border-t border-neutral-900">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[200px] md:h-[300px] bg-emerald-500/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"></div>
         
-        <div class="max-w-4xl w-full glass-panel p-8 md:p-12 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-500/10 relative z-10">
+        <div class="max-w-4xl w-full glass-panel p-6 sm:p-8 md:p-12 rounded-2xl md:rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-500/10 relative z-10">
             <div class="space-y-4 max-w-lg text-center md:text-left">
-                <span class="text-emerald-400 font-mono text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">
+                <span class="text-emerald-400 font-mono text-[10px] md:text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20 inline-block">
                     Material Complementario y Glosario
                 </span>
-                <h3 class="text-3xl font-black tracking-tight text-white">
+                <h3 class="text-2xl md:text-3xl font-black tracking-tight text-white leading-tight">
                     Explora la Biblioteca <br><span class="text-emerald-400 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Extendida de Animalea</span>
                 </h3>
                 <p class="text-xs text-neutral-400 leading-relaxed">
-                    Escanea este código de acceso para ser redirigido a nuestro compendio digital avanzado. En él encontrarás fichas taxonómicas detalladas de fauna endémica, diagramas embrionarios interactivos de deuteróstomos y el glosario completo de términos filogenéticos analizados por nuestro equipo de investigación.
+                    Escanea este código de acceso para ser redirigido a nuestro compendio digital avanzado. En él encontrarás fichas taxonómicas detalladas de fauna endémica, diagramas embrionarios interactivos y el glosario completo de términos filogenéticos analizados por nuestro equipo de investigación.
                 </p>
-                <div class="pt-2 text-[11px] font-mono text-neutral-500">
+                <div class="pt-1 text-[10px] font-mono text-neutral-500">
                     // Enlace activo • Optimizado para visualización móvil
                 </div>
             </div>
 
-            <div class="flex flex-col items-center justify-center p-4 bg-white/5 rounded-2xl border border-white/10 shadow-inner group hover:border-emerald-500/40 transition-colors duration-300">
-                <img src="img/qr-code.png" alt="Código QR Animalea" class="w-40 h-40 object-contain rounded-lg filter drop-shadow-[0_0_15px_rgba(16,185,129,0.2)] group-hover:scale-105 transition-transform duration-300">
-                <span class="text-[10px] font-mono text-emerald-400 mt-3 tracking-widest uppercase animate-pulse">
+            <div class="flex flex-col items-center justify-center p-4 bg-white/5 rounded-xl border border-white/10 shadow-inner group hover:border-emerald-500/40 transition-colors duration-300 w-full sm:w-auto">
+                <img src="img/qr-code.png" alt="Código QR Animalea" class="w-36 h-36 md:w-40 md:h-40 object-contain rounded-lg filter drop-shadow-[0_0_15px_rgba(16,185,129,0.2)] group-hover:scale-105 transition-transform duration-300">
+                <span class="text-[9px] font-mono text-emerald-400 mt-3 tracking-widest uppercase animate-pulse">
                     [ ESCANEAR AQUÍ ]
                 </span>
             </div>
         </div>
     </section>
 
-    <footer class="w-full py-10 text-center text-xs font-mono text-neutral-600 bg-[#010703] border-t border-emerald-950/40">
-&copy; 2024 Kingdom Animalea. | Creado por Mi, Proyecto Final de Biología. | Inspirado en la biodiversidad y la innovación biológica del reino animal.
+    <footer class="w-full py-8 px-4 text-center text-[10px] md:text-xs font-mono text-neutral-600 bg-[#010703] border-t border-emerald-950/40 leading-relaxed">
+        &copy; 2026 Kingdom Animalea. | Creado por Mi, Proyecto Final de Biología. | Inspirado en la biodiversidad y la innovación biológica del reino animal.
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-        
