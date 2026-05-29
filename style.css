@@ -1,0 +1,136 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    background-color: #020603;
+    color: #ffffff;
+    font-family: 'system-ui', -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+.fw-black { font-weight: 900; }
+.tracking-tighter { tracking: -0.05em; }
+
+/* Variables de Colores Neón */
+.text-emerald { color: #10b981; }
+.text-cyan { color: #06b6d4; }
+.text-amber { color: #f59e0b; }
+.text-emerald-light { color: #a7f3d0; }
+.text-cyan-light { color: #cffafe; }
+.text-amber-light { color: #fef3c7; }
+
+.text-neutral-200 { color: #e5e5e5; }
+.text-neutral-300 { color: #d4d4d4; }
+.text-neutral-400 { color: #a3a3a3; }
+
+.extra-small { font-size: 11px; }
+
+/* Fondos Oscuros por Sección */
+.bg-dark-green { background-color: #020a04; }
+.bg-dark-cyan { background-color: #010609; }
+.bg-dark-amber { background-color: #060401; }
+
+/* Hero Video Layout */
+.hero-section { min-height: 100vh; }
+.overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(2,10,4,1));
+}
+
+/* Tipografías con Gradientes Premium */
+.bg-gradient-hero {
+    background: linear-gradient(to bottom, #ffffff, #f3f4f6, #10b981);
+    -webkit-background-clip: text;
+}
+.bg-gradient-amber {
+    background: linear-gradient(to right, #34d399, #fcd34d, #f59e0b);
+    -webkit-background-clip: text;
+}
+
+/* --- GLASSMORPHISM PREMIUM REAVIVADO --- */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.content-card {
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+.content-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(245, 158, 11, 0.6) !important;
+}
+
+/* Elmina fondos negros de videos */
+video { mix-blend-mode: screen; }
+
+/* Ambientación con Luces de Fondo Difuminadas */
+.blur-radial {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(140px);
+    pointer-events: none;
+}
+.bg-emerald-blur { top: 10%; right: 15%; background: rgba(16, 185, 129, 0.12); }
+.bg-cyan-blur { bottom: 10%; left: 15%; background: rgba(6, 182, 212, 0.1); }
+.bg-amber-blur { bottom: 20%; right: 20%; background: rgba(245, 158, 11, 0.06); }
+
+/* --- CONTENEDORES & TAMAÑO DE ANIMALES VECTORES --- */
+.animal-container {
+    width: 380px;
+    height: 380px;
+    position: relative;
+}
+.animal-bird {
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+}
+
+/* Resplandores Neón Dinámicos */
+.drop-shadow-emerald { filter: drop-shadow(0 0 25px rgba(16, 185, 129, 0.5)); }
+.drop-shadow-cyan { filter: drop-shadow(0 0 25px rgba(6, 182, 212, 0.5)); }
+.drop-shadow-amber { filter: drop-shadow(0 0 30px rgba(245, 158, 11, 0.4)); }
+
+/* --- MOTION/KEYFRAMES: ANIMACIONES EN BUCLE NATIVAS --- */
+/* 1. Medusa */
+.tentacle-1, .tentacle-2, .tentacle-3 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: jellyMove 3.8s infinite ease-in-out alternate;
+}
+.tentacle-2 { animation-delay: 0.4s; }
+.tentacle-3 { animation-delay: 0.8s; }
+
+@keyframes jellyMove {
+    0% { stroke-dashoffset: 95; transform: skewX(0deg); }
+    100% { stroke-dashoffset: 15; transform: skewX(6deg); }
+}
+
+/* 2. Camaleón */
+.chameleon-eye { animation: eyeMove 5s infinite ease-in-out; }
+.lizard-tongue { animation: tongueStrike 4s infinite ease-in-out; }
+
+@keyframes eyeMove {
+    0%, 100% { transform: translate(0, 0); }
+    30% { transform: translate(2px, -1px); }
+    70% { transform: translate(-1.5px, 2px); }
+}
+@keyframes tongueStrike {
+    0%, 90%, 100% { stroke-dasharray: 10; stroke-dashoffset: 10; }
+    95% { stroke-dasharray: 50; stroke-dashoffset: 0; transform: scaleX(1.35); }
+}
+
+/* 3. Águila */
+.left-wing { transform-origin: center; animation: wingL 2.2s infinite ease-in-out; }
+.right-wing { transform-origin: center; animation: wingR 2.2s infinite ease-in-out; }
+
+@keyframes wingL {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-8deg) translateY(-3px); }
+}
+@keyframes wingR {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(8deg) translateY(-3px); }
+}
