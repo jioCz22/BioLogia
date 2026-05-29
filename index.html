@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Animalea</title>
-    <!-- Tailwind v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#020603] text-white antialiased overflow-x-hidden">
+<body>
 
-    <!-- HERO SECTION -->
     <section class="w-full h-screen flex flex-col justify-end items-center text-center relative overflow-hidden pb-32 px-4">
         <video autoplay loop muted playsinline 
-               class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 filter brightness-75 contrast-125 mix-blend-screen">
-            <source src="img/Fondo  .mp4" type="video/mp4">
+               class="absolute inset-0 w-full h-full object-cover z-0 opacity-45 filter brightness-90 contrast-110">
+            <source src="img/Fondo.mp4" type="video/mp4">
         </video>
 
-        <!-- Gradiente premium de oclusión profunda -->
-        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-[#020b05]/60 to-[#020b05] z-5"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-emerald-950/20 to-[#020b05] z-5"></div>
 
         <div class="relative z-10 space-y-4 max-w-4xl animate-[fadeIn_1.5s_ease-out]">
             <span class="text-emerald-400 font-mono text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
@@ -39,9 +36,7 @@
         </div>
     </section>
 
-    <!-- SECTION 1: CARACTERÍSTICAS -->
     <div id="pin-section-1" class="w-full h-screen relative overflow-hidden bg-[#020b05] flex items-center">
-        <!-- Luces de fondo difuminadas más vivas -->
         <div class="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
 
         <div class="w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -50,15 +45,15 @@
                 <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Sinapomorfías y<br><span class="text-emerald-400 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Fisiología Animal</span></h2>
                 
                 <div class="glass-panel p-6 rounded-3xl space-y-4 text-sm text-neutral-300 shadow-2xl border-l-4 border-emerald-500 relative overflow-hidden group hover:border-emerald-400 transition-colors">
-                    <p><strong class="text-white font-semibold">Tisularidad y Eucariosis:</strong> Organismos pluricelulares con diferenciación celular avanzada en tejidos especializados (excepto Poríferos)[cite: 2].</p>
-                    <p><strong class="text-white font-semibold">Heterotrofía por Ingestión:</strong> Metabolismo oxidativo basado en la asimilación interna de macromoléculas orgánicas[cite: 2].</p>
-                    <p><strong class="text-white font-semibold">Estructura Motriz Bilateral:</strong> Presencia de tejidos contráctiles (muscular) y de conducción electroquímica (nervioso) únicos del reino[cite: 2].</p>
+                    <p><strong class="text-white font-semibold">Tisularidad y Eucariosis:</strong> Organismos pluricelulares con diferenciación celular avanzada en tejidos especializados (excepto Poríferos). Sus células carecen de pared celular rígida, lo que permite la plasticidad celular y estructural, soportada por una matriz extracelular rica en colágeno estructural único.</p>
+                    <p><strong class="text-white font-semibold">Heterotrofía por Ingestión:</strong> Metabolismo oxidativo basado en la asimilación interna de macromoléculas orgánicas. A diferencia de los hongos que absorben nutrientes externamente, los animales procesan los alimentos en cavidades digestivas internas (cámaras gástricas o tubos digestivos complejos) auxiliados por enzimas hidrolíticas específicas.</p>
+                    <p><strong class="text-white font-semibold">Estructura Motriz Bilateral:</strong> Presencia de tejidos contráctiles (muscular) y de conducción electroquímica (nervioso) únicos del reino. Esto genera polaridad funcional y permite respuestas motoras voluntarias inmediatas ante estímulos ambientales, coordinando la homeostasis interna activa.</p>
                 </div>
 
                 <div id="examples-1" class="glass-panel p-5 rounded-2xl bg-emerald-950/10 border border-emerald-500/10 opacity-0 translate-y-6">
                     <span class="text-xs font-mono text-emerald-400 block mb-2">// Registro Evolutivo Temprano:</span>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Desde la simetría radial en <span class="text-emerald-300 italic">Cnidarios</span> (medusas) con redes nerviosas difusas, hasta las transiciones de simetría bilateral que permitieron la cefalización estructural.
+                        Desde la simetría radial en <span class="text-emerald-300 italic">Cnidarios</span> (medusas) con redes nerviosas difusas no centralizadas y organización diblástica (dos capas germinales), hasta las transiciones críticas hacia la simetría bilateral que propiciaron la triploblastía (ectodermo, mesodermo y endodermo), dando origen a la cefalización estructural y centros de procesamiento ganglionar avanzados.
                     </p>
                 </div>
             </div>
@@ -78,7 +73,6 @@
         </div>
     </div>
 
-    <!-- SECTION 2: TAXONOMÍA -->
     <div id="pin-section-2" class="w-full h-screen relative overflow-hidden bg-[#010703] flex items-center">
         <div class="absolute bottom-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
 
@@ -88,19 +82,19 @@
                 <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Sistemática y<br><span class="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Árbol Filogenético</span></h2>
                 
                 <div class="glass-panel p-6 rounded-3xl text-left text-neutral-300 shadow-2xl border-r-4 border-cyan-500 relative">
-                    <p class="mb-4 text-sm leading-relaxed">El clado <strong class="text-white">Animalia (Metazoa)</strong> diverge dentro del dominio Eukarya, subdividiéndose bajo criterios morfológicos de capas germinales y celoma[cite: 2]:</p>
+                    <p class="mb-4 text-sm leading-relaxed">El clado <strong class="text-white">Animalia (Metazoa)</strong> diverge filogenéticamente dentro del dominio Eukarya a partir de ancestros coanoflagelados unicedulares. Su subdivisión moderna utiliza genómica comparativa, patrones embrionarios de segmentación (Protóstomos vs. Deuteróstomos) y la naturaleza arquitectónica de sus cavidades corporales celómicas:</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-neutral-800/60">
                         <div class="p-3 bg-cyan-950/20 rounded-xl border border-cyan-500/10 hover:border-cyan-500/30 transition-all">
                             <span class="text-cyan-400 font-bold block text-sm mb-1">INVERTEBRADOS (95% del Reino)</span>
-                            <p class="text-xs text-neutral-400 mb-2">Ausencia de corda dorsal o columna vertebral organizada.</p>
+                            <p class="text-xs text-neutral-400 mb-2">Grupo parafilético definido por la ausencia de columna vertebral ósea. Exhiben una diversidad morfológica masiva que incluye exoesqueletos de quitina calcificada, conchas de carbonato de calcio o sistemas hidrostáticos de soporte de presión interna.</p>
                             <span class="text-[10px] text-neutral-500 block font-mono">// PHYLA CLAVE:</span>
-                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Arthropoda, Mollusca, Annelida, Echinodermata.</p>
+                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Arthropoda (insectos, crustáceos), Mollusca (cefalópodos, bivalvos), Annelida, Echinodermata.</p>
                         </div>
                         <div class="p-3 bg-cyan-950/20 rounded-xl border border-cyan-500/10 hover:border-cyan-500/30 transition-all">
                             <span class="text-cyan-400 font-bold block text-sm mb-1">VERTEBRADOS (Subphylum Chordata)</span>
-                            <p class="text-xs text-neutral-400 mb-2">Presencia de notocorda, tubo neural hueco dorsal y cráneo cartilaginoso u óseo.</p>
+                            <p class="text-xs text-neutral-400 mb-2">Clado monofilético caracterizado por la presencia de notocorda durante el desarrollo embrionario, un cordón nervioso dorsal hueco, hendiduras faríngeas y una cola post-anal, evolucionando hacia un endoesqueleto axial metamerizado y un cráneo protector de alta densidad.</p>
                             <span class="text-[10px] text-neutral-500 block font-mono">// CLASES CLAVE:</span>
-                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Chondrichthyes, Amphibia, Reptilia, Mammalia.</p>
+                            <p class="text-[11px] text-cyan-200/90 italic font-medium">Chondrichthyes (peces cartilaginosos), Amphibia, Reptilia, Aves, Mammalia.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +114,6 @@
         </div>
     </div>
 
-    <!-- SECTION 3: IMPORTANCIA BIOLÓGICA -->
     <div id="pin-section-3" class="w-full h-screen relative overflow-hidden bg-[#020b05] flex items-center">
         <div class="absolute bottom-1/3 right-1/3 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
 
@@ -133,56 +126,58 @@
             </h2>
             
             <div id="grid-3" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full opacity-0 translate-y-24 z-10">
-                <!-- Tarjeta 1 -->
                 <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
                     <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
                         <span class="text-amber-400 text-xs font-mono">01</span>
                     </div>
                     <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Cascadas Tróficas</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Control top-down de las poblaciones mediante la depredación, estabilizando la biomasa vegetal y previniendo colapsos de suelo.
+                        Ejercen un control regulador de tipo "top-down" (de arriba hacia abajo) en las redes alimentarias mediante la depredación activa. Al mitigar la presión herbívora desmedida, se preserva directamente la estructura forestal, la captura de carbono atmosférico, la estabilidad de los suelos y la prevención del estrés hídrico macroambiental.
                     </p>
                     <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Regulación macroambiental.
+                        <strong>Bio-Impacto:</strong> Regulación macroambiental macroscópica.
                     </p>
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
                     <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
                         <span class="text-amber-400 text-xs font-mono">02</span>
                     </div>
                     <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Polinización Zoofílica</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Flujo genético de angiospermas a través de vectores animales, sosteniendo más del 75% de los cultivos de consumo humano.
+                        Facilitan el flujo genético geográfico y la recombinación meiótica cruzada de las angiospermas (plantas con flores) mediante vectores animales móviles. Este proceso interactivo mantiene la resiliencia evolutiva de la flora y sostiene más del 75% de la producción global de cultivos agrícolas críticos para la humanidad.
                     </p>
                     <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Coevolución Planta-Animal.
+                        <strong>Bio-Impacto:</strong> Coevolución simbiótica Planta-Animal.
                     </p>
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div class="glass-panel p-6 rounded-2xl border-t-2 border-t-amber-500/60 space-y-3 hover:scale-105 transition-all duration-300 bg-neutral-900/10 group">
                     <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors">
                         <span class="text-amber-400 text-xs font-mono">03</span>
                     </div>
                     <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Bioturbación de Suelos</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Alteración física y química de sedimentos por organismos fosoriales, acelerando el reciclaje de nitrógeno y fósforo.
+                        Provocan la alteración mecánica, mezcla y oxigenación de sedimentos terrestres y marinos mediante organismos fosoriales y descomponedores. Esto acelera sustancialmente la meteorización mineral de macronutrientes esenciales, permitiendo el reciclaje y fijación eficiente de ciclos biogeoquímicos como el nitrógeno y el fósforo.
                     </p>
                     <p class="text-[11px] text-amber-300/80 font-mono italic pt-2 border-t border-neutral-800">
-                        <strong>Bio-Impacto:</strong> Ciclos Biogeoquímicos.
+                        <strong>Bio-Impacto:</strong> Dinámica de Ciclos Biogeoquímicos globales.
                     </p>
                 </div>
             </div>
 
-            
+            <div id="animal-3" class="absolute bottom-[-100px] w-64 h-64 pointer-events-none opacity-0 flex items-center justify-center">
+                <svg class="w-full h-full text-amber-400 drop-shadow-[0_0_35px_rgba(245,158,11,0.4)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path class="left-wing" d="M50,40 C30,12 10,25 25,50 C35,60 48,50 50,40 Z" fill="rgba(245,158,11,0.04)"></path>
+                    <path class="right-wing" d="M50,40 C70,12 90,25 75,50 C65,60 52,50 50,40 Z" fill="rgba(245,158,11,0.04)"></path>
+                    <polygon points="47,40 53,40 50,52" fill="currentColor"></polygon>
+                </svg>
+            </div>
         </div>
     </div>
 
-    <!-- FOOTER PRO -->
-    <footer class="w-full py-12 text-center text-xs font-mono text-neutral-500 bg-[#010703] border-t border-emerald-950/30 space-y-2">
-        <p class="tracking-widest text-emerald-400/60 font-bold uppercase">Proyecto de Investigación • Reino Animalea</p>
+    <footer class="w-full py-10 text-center text-xs font-mono text-neutral-600 bg-[#010703] border-t border-emerald-950/40">
+        PROYECTO INTERACTIVO DE BIOLOGÍA • EQUIPO DE 3 • ALTA EXPECTATIVA
     </footer>
 
     <script src="script.js"></script>
