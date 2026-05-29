@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingdom Animalea</title>
+    <title>Kingdom Animalia - Interactive Experience</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#020603] text-white antialiased overflow-x-hidden">
 
     <section class="w-full h-screen flex flex-col justify-end items-center text-center relative overflow-hidden pb-32 px-4">
         <video autoplay loop muted playsinline 
                class="absolute inset-0 w-full h-full object-cover z-0 opacity-45 filter brightness-90 contrast-110">
-            <source src="img/Fondo  .mp4" type="video/mp4">
+            <source src="img/Fondo.mp4" type="video/mp4">
         </video>
 
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-emerald-950/20 to-[#020b05] z-5"></div>
@@ -165,21 +165,43 @@
                     </p>
                 </div>
             </div>
-
-            <div id="animal-3" class="absolute bottom-[-100px] w-64 h-64 pointer-events-none opacity-0 flex items-center justify-center">
-                <svg class="w-full h-full text-amber-400 drop-shadow-[0_0_35px_rgba(245,158,11,0.4)]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
-                    <path class="left-wing" d="M50,40 C30,12 10,25 25,50 C35,60 48,50 50,40 Z" fill="rgba(245,158,11,0.04)"></path>
-                    <path class="right-wing" d="M50,40 C70,12 90,25 75,50 C65,60 52,50 50,40 Z" fill="rgba(245,158,11,0.04)"></path>
-                    <polygon points="47,40 53,40 50,52" fill="currentColor"></polygon>
-                </svg>
-            </div>
         </div>
     </div>
 
+    <section class="w-full min-h-[60vh] bg-[#010603] relative py-20 px-6 flex flex-col items-center justify-center border-t border-neutral-900">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-4xl w-full glass-panel p-8 md:p-12 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-500/10 relative z-10">
+            <div class="space-y-4 max-w-lg text-center md:text-left">
+                <span class="text-emerald-400 font-mono text-xs tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">
+                    Material Complementario y Glosario
+                </span>
+                <h3 class="text-3xl font-black tracking-tight text-white">
+                    Explora la Biblioteca <br><span class="text-emerald-400 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Extendida de Animalea</span>
+                </h3>
+                <p class="text-xs text-neutral-400 leading-relaxed">
+                    Escanea este código de acceso para ser redirigido a nuestro compendio digital avanzado. En él encontrarás fichas taxonómicas detalladas de fauna endémica, diagramas embrionarios interactivos de deuteróstomos y el glosario completo de términos filogenéticos analizados por nuestro equipo de investigación.
+                </p>
+                <div class="pt-2 text-[11px] font-mono text-neutral-500">
+                    // Enlace activo • Optimizado para visualización móvil
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-4 bg-white/5 rounded-2xl border border-white/10 shadow-inner group hover:border-emerald-500/40 transition-colors duration-300">
+                <img src="img/qr-code.png" alt="Código QR Animalea" class="w-40 h-40 object-contain rounded-lg filter drop-shadow-[0_0_15px_rgba(16,185,129,0.2)] group-hover:scale-105 transition-transform duration-300">
+                <span class="text-[10px] font-mono text-emerald-400 mt-3 tracking-widest uppercase animate-pulse">
+                    [ ESCANEAR AQUÍ ]
+                </span>
+            </div>
+        </div>
+    </section>
+
     <footer class="w-full py-10 text-center text-xs font-mono text-neutral-600 bg-[#010703] border-t border-emerald-950/40">
-        PROYECTO INTERACTIVO DE BIOLOGÍA • EQUIPO DE 3 • ALTA EXPECTATIVA
+&copy; 2024 Kingdom Animalea. | Creado por Mi, Proyecto Final de Biología. | Inspirado en la biodiversidad y la innovación biológica del reino animal.
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+        
